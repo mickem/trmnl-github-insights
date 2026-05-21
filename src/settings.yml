@@ -4,7 +4,7 @@ no_screen_padding: 'no'
 dark_mode: 'no'
 static_data: ''
 polling_verb: get
-polling_url: "https://api.github.com/repos/{{github_repo}}\r\nhttps://api.github.com/repos/{{github_repo}}/releases/latest\r\nhttps://api.github.com/search/issues?q=repo:{{github_repo}}+type:issue+state:open\r\nhttps://api.github.com/search/issues?q=repo:{{github_repo}}+type:pr+state:open\r\n"
+polling_url: "https://api.github.com/repos/{{github_repo}}\r\nhttps://api.github.com/repos/{{github_repo}}/releases/latest\r\nhttps://api.github.com/search/issues?q=repo:{{github_repo}}+type:issue+state:open&per_page=1\r\nhttps://api.github.com/search/issues?q=repo:{{github_repo}}+type:pr+state:open&per_page=1\r\n"
 polling_headers: accept=application/vnd.github.v3.html+json
 polling_body: ''
 id: 158645
